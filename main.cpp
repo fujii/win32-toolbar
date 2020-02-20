@@ -25,7 +25,7 @@ HWND CreateSimpleToolbar(HWND hWndParent)
 
     // Create the toolbar.
     HWND hWndToolbar = CreateWindowEx(0, TOOLBARCLASSNAME, NULL, 
-        WS_CHILD | TBSTYLE_TOOLTIPS | TBSTYLE_WRAPABLE, 0, 0, 0, 0, 
+        WS_CHILD | TBSTYLE_FLAT | TBSTYLE_TOOLTIPS | TBSTYLE_WRAPABLE, 0, 0, 0, 0, 
         hWndParent, NULL, hInst, NULL);
         
     if (hWndToolbar == NULL)
